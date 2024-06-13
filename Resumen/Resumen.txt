@@ -11,3 +11,6 @@ etiquetas de imagen
 Debemos almacenar las imágenes que vamos a utilizar en una carpeta para poder tenerlas en un solo lugar 
 
 <img src=“ubicación de la imagen” alt=“descripción de la imagen”>
+
+
+AGREGAR IMAGENES A CADA UNO DE LOS ITEMS DE LAS LISTAS Y CONTINUAR CON EL CURSO (MINIMO 10 CLASES)
