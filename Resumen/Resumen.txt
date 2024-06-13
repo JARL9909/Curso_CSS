@@ -12,5 +12,13 @@ Debemos almacenar las imágenes que vamos a utilizar en una carpeta para poder t
 
 <img src=“ubicación de la imagen” alt=“descripción de la imagen”>
 
+<figure>
+          <img
+            src=“ubicación de la imagen”
+            alt=“descripción de la imagen (sera mostrada cuando la imagen no carga)”
+          />
+          <figcaption>Descripcion de la imagen que se muestra en el pie de la imagen</figcaption>  
+</figure>
+
 
 AGREGAR IMAGENES A CADA UNO DE LOS ITEMS DE LAS LISTAS Y CONTINUAR CON EL CURSO (MINIMO 10 CLASES)
