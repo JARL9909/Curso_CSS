@@ -1,0 +1,13 @@
+Optimización de imágenes 
+Las imágenes que usamos deben ser acorde a nuestro proyecto, el peso optimo en una imagen es de 70kb. como podemos optimizar estas imágenes?
+ 
+Tiny PNG: con esta herramienta comprimimos la imagen y no reduce su calidad 
+
+Verexift: elimina los metadatos de la imagen (Funciona muy bien con fotografías que provengan de una camara o celular)
+
+
+etiquetas de imagen
+
+Debemos almacenar las imágenes que vamos a utilizar en una carpeta para poder tenerlas en un solo lugar 
+
+<img src=“ubicación de la imagen” alt=“descripción de la imagen”>
