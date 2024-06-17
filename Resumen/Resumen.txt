@@ -170,3 +170,54 @@ El texto que esta en el centro lo podemos modificar para hacerlo coincidir con e
 informacion y aparte le cambiamos el texto visible de la etiqueta
 
 <input type="submit" value="Finalizar">.  De esta forma puedo cambiar el texto a la etiqueta input
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+Estilos CSS
+
+Para hacer uso de los estilos CSS, debemos crear una clase estilos.css en la cual vamos a definir cada uno de ellos
+
+para llamar nuestra clase de estilos, usamos la etiqueta <link rel="stylesheet" href="ubicacion del archivo.css"> en el head de la pagina
+
+
+Para hacer una modificasion en el estilo de una pagina, lo podemos hacer de la siguiente forma
+
+Ejemplo con id
+
+Estructura
+#id {
+    Estilos
+}
+
+Ejemplo
+#texto{
+    color: blueviolet;
+    font-size: 30px;
+}
+
+Ejemplo con class
+
+Estructura
+.clas {
+    Estilos
+}
+
+Ejemplo
+.texto{
+    color: blueviolet;
+    font-size: 30px;
+}
+
+
+Ejemplo con cetiquetas
+
+Estructura
+etiqueta {
+    Estilos
+}
+
+Ejemplo
+p{
+    color: blueviolet;
+    font-size: 30px;
+}
