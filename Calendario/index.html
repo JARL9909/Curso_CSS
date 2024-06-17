@@ -13,7 +13,8 @@
     </header>
     <main>
         <h1>Formularios</h1>
-        <h2>Formulario creado de la forma larga (indicando en campos separados cada parte de la informacion que queremos)</h2>
+        <h2>Formulario creado de la forma larga (indicando en campos separados cada parte de la informacion que
+            queremos)</h2>
         <form action="">
             <label for="hora">
                 <span>Hora</span>
@@ -48,8 +49,9 @@
             <input type="submit">
         </form>
         <h2>Formulario creado con atributos adicionales require y autocomplete
-             (nos ayudan a hacer los campos obligatorios y a completarlos con informacion antigua de nuestro buscador)</h2>
-        <form action=""> 
+            (nos ayudan a hacer los campos obligatorios y a completarlos con informacion antigua de nuestro buscador)
+        </h2>
+        <form action="">
             <label for="nombre">
                 <span>Ingresa tu nombre: </span>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
@@ -59,10 +61,11 @@
                 <span>Correo: </span>
                 <input type="email" id="correo" name="correo" placeholder="Tu correo" autocomplete="email" required>
             </label>
-            
+
             <label for="pais">
                 <span>Ingresa tu pais de origen: </span>
-                <input type="text" id="pais" name="pais" placeholder="Tu pais de origen" autocomplete="country" required>
+                <input type="text" id="pais" name="pais" placeholder="Tu pais de origen" autocomplete="country"
+                    required>
             </label>
 
             <label for="cp">
@@ -71,10 +74,27 @@
             </label>
 
             <input type="submit">
-            
-            
-</form>
 
+
+        </form>
+        <h2>Usaremos un campo tipo lista para capturar informacion en nuestro formulario (Forma antigua mal vista)</h2>
+        <form action="">
+            <select name="cursos" id="cursos">
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="CSS">CSS</option>
+            </select>
+            <h2>campo tipo lista para capturar informacion en nuestro formulario (Forma mejorada y actual)</h2>
+            <input list="cursos2"  name="cursos2">
+            <datalist id="cursos2">
+                <option value="HTML">HTML</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="CSS">CSS</option>
+            </datalist>
+        <input type="submit">
+        </form>
     </main>
     <footer>
 

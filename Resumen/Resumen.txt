@@ -117,3 +117,56 @@ span:texto que nos indica que debemos ingresar en el campo (si damos clic sobre 
 input: etiqueta que define la entrada del dato. con sus atributos podemos definir el tipo y el nombre que usara dentro del proyecto 
       type: define el tipo de dato que se ingresara en el campo 
       id: indica el nombre que va a tomar dicho campo y este sirve para enlazarlo con el nombre del lebel 
+
+
+
+Adicional a esto, podemos ayudarnos de nuestro navegador al utilizar un atributo que nos ayuda a autorrellenar los campos que ya han sido usados y 
+almacenados en nuestro navegador (autocomplete="nombre campo")
+
+Tambie podemos validar que nuestros campos siempre tengan un contenido con el atributo required
+
+Ejemlo
+
+<form action=""> 
+            <label for="nombre">
+                <span>Ingresa tu nombre: </span>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+            </label>
+
+            <label for="correo">
+                <span>Correo: </span>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo" autocomplete="email" required>
+            </label>
+            
+            <label for="pais">
+                <span>Ingresa tu pais de origen: </span>
+                <input type="text" id="pais" name="pais" placeholder="Tu pais de origen" autocomplete="country" required>
+            </label>
+
+            <label for="cp">
+                <span>Codigo Postal: </span>
+                <input type="text" id="cp" name="cp" placeholder="Tu codigo postal" autocomplete="postal-code" required>
+            </label>
+            
+            
+</form>
+
+
+
+Por ultimo vamos a ver un tipo de input llamado selec el cual nos despliega una lista de seleccion como opcion
+ejemplo selec
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Boton VS <input type="submit">
+
+En si la funcionalidad es la misma, inclusibe si queremos usar un boton dentro de un formulario lo podeos hacer siempre y 
+cuando le agreguemos el tipo submit. Aunque la etiqueta de boton es mas manejable ya que la podemos modificar mas en su componente grafico 
+
+ejemplo de boton 
+<button>Enviar</button> 
+
+El texto que esta en el centro lo podemos modificar para hacerlo coincidir con el contexto que estamos manejando
+<button type="submit">Finalizar</button> . En este caso lo podriamos usar dentro de un formulario para enviar la 
+informacion y aparte le cambiamos el texto visible de la etiqueta
+
+<input type="submit" value="Finalizar">.  De esta forma puedo cambiar el texto a la etiqueta input
