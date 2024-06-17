@@ -5,7 +5,7 @@ Tiny PNG: con esta herramienta comprimimos la imagen y no reduce su calidad
 
 Verexift: elimina los metadatos de la imagen (Funciona muy bien con fotografías que provengan de una camara o celular)
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 etiquetas de imagen
 
 Debemos almacenar las imágenes que vamos a utilizar en una carpeta para poder tenerlas en un solo lugar 
@@ -21,4 +21,99 @@ Debemos almacenar las imágenes que vamos a utilizar en una carpeta para poder t
 </figure>
 
 
-AGREGAR IMAGENES A CADA UNO DE LOS ITEMS DE LAS LISTAS Y CONTINUAR CON EL CURSO (MINIMO 10 CLASES)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+etiquetas de video
+<video src="ubicacion del video" controls preload="auto"></video>
+
+si agregamos #t="en que segundo iniciamos a reproducir el video","en que segundo queremos que se detenga"
+**ejemplo: <video src="ubicacion del video#t=10,60" controls preload="auto"></video>
+
+controls: agrega al video los controles necesarios para reproducir, pausar y adelantar.
+
+preload = auto: hace que el navegador descargue el video, en el momento en el que se acceda a la página.
+
+
+<video controls preload="auto">
+<sourse src="ubicacion del video.mp4"/>
+<sourse src="ubicacion del video.m4v"/>
+</video>
+
+Si agregamos la ruta en una etiqueta source, podemos colocar varias rutas, las cuales se 
+diferenciaran por su formato y el buscador se encargara de seleccionar cual video se reproducira
+(solo se reproducira un video ya que el navegador elegira el que mejor entienda)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Listas
+para crear una lista podemos usar dos etiqeutas, dependiendo el tipo de lista que sedeamos (lista ordenada o lista desordenada) 
+las etiquetas <ul></ul> para crear una lista desordenada(sus items usaran viñetas) y <ol></ol> se utilizan para una 
+lista ordenada(sus items se numeraran). Para agregar Items a las listas (cualquiera de las dos) utilizamos la etiqueta <li>Item</li>
+
+Ejemplo de lista ordenada
+<h2>Frutas</h2>
+        <ol>
+            <li>Pera</li>
+            <li>Manzana</li>
+            <li>Fresa</li>
+        </ol>
+
+Ejemplo lista desordenada
+<h2>Mascotas</h2>
+        <ul>
+            <li>Perro</li>
+            <li>Gato</li>
+            <li>Tigre</li>
+        </ul>
+
+Ejemlo lista combinada
+  <h1>Mi lista</h1>
+    <ul>
+        <li>Frutas</li>
+        <ol>
+            <li>Pera</li>
+            <li>Manzana</li>
+            <li>Fresa</li>
+        </ol>
+        <li>Casnes</li>
+        <ol>
+            <li><a href="https://www.directoalpaladar.com/recetario/71-mejores-recetas-pollo">Pollo</a></li>
+            <li>Res</li>
+            <li>Cerdo</li>
+        </ol>
+        <li>Verduras</li>
+        <ol>
+            <li>Cebolla</li>
+            <li>Lechuga</li>
+            <li>Repollo</li>
+        </ol>
+    </ul>
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Formularios
+El uso de calendarios es algo de nuestro dia a dia asi que debemos aprender a hacer los formularios mas adecuados a nuestras necesidades
+a continuacion veremos la estructura de un formulario (solo usaremos algunos de los tipos de datos pero existen muchos mas)
+
+<form action=""> 
+            <label for="nombre">
+                <span>Ingresa tu nombre: </span>
+                <input type="text" id="nombre" placeholder="Tu nombre">
+            </label>
+
+            <label for="fechaNac">
+                <span>Fecha de Nacimiento: </span>
+                <input type="date" id="fechaNac">
+            </label>
+            
+            <label for="hora">
+                <span>Horario de estudio: </span>
+                <input type="time" id="hora">
+            </label>
+</form>
+
+
+form: etiqueta de inicio del formulario
+label: definicion de un campo en el formulario
+      for: nombre del campo
+      placeholder: indica un texto de ejemplo que se eliminara al ingresar en nuestro
+span:texto que nos indica que debemos ingresar en el campo (si damos clic sobre este texto, nos llevara al campo que debemos diligenciar)
+input: etiqueta que define la entrada del dato. con sus atributos podemos definir el tipo y el nombre que usara dentro del proyecto 
+      type: define el tipo de dato que se ingresara en el campo 
+      id: indica el nombre que va a tomar dicho campo y este sirve para enlazarlo con el nombre del lebel 
