@@ -47,6 +47,34 @@
             </label>
             <input type="submit">
         </form>
+        <h2>Formulario creado con atributos adicionales require y autocomplete
+             (nos ayudan a hacer los campos obligatorios y a completarlos con informacion antigua de nuestro buscador)</h2>
+        <form action=""> 
+            <label for="nombre">
+                <span>Ingresa tu nombre: </span>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+            </label>
+
+            <label for="correo">
+                <span>Correo: </span>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo" autocomplete="email" required>
+            </label>
+            
+            <label for="pais">
+                <span>Ingresa tu pais de origen: </span>
+                <input type="text" id="pais" name="pais" placeholder="Tu pais de origen" autocomplete="country" required>
+            </label>
+
+            <label for="cp">
+                <span>Codigo Postal: </span>
+                <input type="text" id="cp" name="cp" placeholder="Tu codigo postal" autocomplete="postal-code" required>
+            </label>
+
+            <input type="submit">
+            
+            
+</form>
+
     </main>
     <footer>
 
