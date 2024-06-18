@@ -12,3 +12,39 @@ p{
     color: aquamarine;
     font-size: 30px;
 }
+
+
+
+.header_nav{
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color:#13a4a4 ;
+}
+
+.header_nav__item{
+    display: inline-block;
+}
+
+.header_nav__item a{
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+
+}
+
+.header_nav__item a:hover{
+    color: blue;
+
+}
+
+.header_nav__item a:active{
+    color: red;
+
+}
+
+.header_nav__item a::after{
+    content:" | ";;
+
+}
